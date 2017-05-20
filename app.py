@@ -43,7 +43,7 @@ def makeWebhookResult(req):
     #for i in matches:
     #    speech="hello "
             
-    speech=i
+    speech=(str)i
 
     
 
