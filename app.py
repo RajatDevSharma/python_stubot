@@ -36,14 +36,12 @@ def makeWebhookResult(req):
     #find_book = parameters.get("title")
     find_book="data structures"
     #speech="hello"
-    books=[u'Discrete Mathematics', u'Algorithms I', u'Programming and Data Structures']
+    books=['Discrete Mathematics', 'Algorithms I', 'Programming and Data Structures']
 
     matches = [x for x in books if re.search(find_book, x, re.M|re.I)]
 
-    #for i in matches:
-    #    speech="hello "
-            
-    speech=(str)i
+    for i in matches:
+        speech= speech + i + ","
 
     
 
