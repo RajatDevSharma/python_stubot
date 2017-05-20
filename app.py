@@ -40,7 +40,7 @@ def makeWebhookResult(req):
     matches = [x for x in books if re.search(find_book, x, re.M|re.I)]
 
     for i in matches:
-        speech= speech + i +","
+        speech= speech +","
         
     print("Response:")
     print(speech)
